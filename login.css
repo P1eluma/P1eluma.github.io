@@ -1,0 +1,658 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+*,*::before,*::after{box-sizing:border-box}body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{margin:0}ul[role="list"],ol[role="list"]{list-style:none}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}input,button,textarea,select{font:inherit}@media(prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+
+
+
+body#LoginBody{
+	  background-image: url('../images/login background.jpg'); 
+	  background-attachment: fixed;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+    background-size: cover;
+}
+
+
+div.loginhead{
+	text-align: left;
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	padding: 5px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+div#errorMessage{
+ background: #fff;
+ text-align: center;
+ color: red;
+ font-size: 20px;
+ padding: 11px;
+}
+
+div.loginhead a{
+  font-size: 15px;
+  color:#FFFFFF ;
+	padding: 5px 10px;
+	text-decoration: none;
+  display: inline-block;    
+  margin-left: 10px;   
+}
+div.loginhead a:hover{
+	border: 2px solid; #FFFFFF;
+}
+
+div.loginheader{
+	text-align: center;
+}
+
+div.loginheader{
+	margin-bottom: 70px;
+}
+
+div.loginheader h1{
+	font-size: 80px;
+	font-weight: bold;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+}
+
+div.loginheader h3{
+	color: #FFFFFF;
+	font size: 50px;
+	margin: 0px;
+	text-transform: uppercase;
+	display:inline-block;
+
+}
+
+div.loginheader h3:after{
+    content:'';
+    display: block;
+    height: 5px;
+    background: #000000;
+    margin:0 auto;
+}
+
+div.loginbody form{
+	margin:0 auto;
+	width: 450px;
+	background: rgba(0,0,0,.5);
+	padding: 50px;
+	border: 3px solid #fff;
+	border-radius: 5px;
+}
+
+div.logininputContainer{
+	margin-top: 20px;
+}
+
+div.logininputContainer label{
+	display: block;
+	text-transform: uppercase;                                                                                                                                                                                                                                                                                                                                                      
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+div.logininputContainer input{
+	height:25px;
+	width: 100%;
+}
+
+div.logininputContainer input:hover{
+    border: 2px solid#000000;
+}
+div.loginbuttonContainer{
+	margin-top: 20px;
+	text-align: center;
+}
+div.loginbuttonContainer button{
+	font-size: 15px;
+	padding: 5px 10px;
+	background: #fff;
+}
+
+div.loginbuttonContainer button:hover{
+	border:2px solid #000000;
+}
+
+div.loginnewaccount{
+	font-weight: bold;
+	margin-top: 15px;
+	text-decoration: none;
+}
+div.loginnewaccount p{
+	color: #ffffff;
+}
+
+div.loginnewaccount a{
+	color: #ffffff;
+}
+div.loginnewaccount{
+	text-align: center;
+}
+
+/*HOMEPAGE STYLE*/
+
+div.header{
+	width: 100%;
+	background:#000000;
+	padding: 5px 0px;
+	text-align: right;
+}
+
+div.header a{
+	font-size: 20px;
+	color: #FFFFFF;
+	padding: 5px 10px;
+	text-decoration: none;
+  display: inline-block;     /* Display the anchor elements as inline-block to have them in a row */
+  margin-left: 10px;        /* Add some left margin between each link for spacing */
+}
+
+div.header a:hover{
+	border: 2px solid; #FFFFFF;
+}
+
+
+div.banner {
+	position: relative;
+}
+
+img.background-image { 
+	width: 100%;
+	height: 450px;
+	object-fit: cover;    /* Ensures the image covers the entire space, preserving its aspect ratio */
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;    /*places the image behind other content*/
+	padding-bottom: -30px;
+}
+
+
+div.homepageContainer{
+	position: relative;
+	z-index: 1;   /* Places the content above the background image */
+	padding: 100px 0;
+	text-align: center;
+}
+
+div.bannerHeader h1 {
+	font-size: 100px;
+	color: #FFFFFF;
+	line-height: 100%;
+	margin-top: 50px;
+}
+
+div.bannerHeader h3{
+	font-size: 40px;
+	color: #FFFFFF;
+	margin-top: 20px;
+	line-height: 100%;
+}
+
+
+h3.bannerTagline{
+	line-height: 100%;
+	font-size: 20px;
+	margin-top: 20px;
+	color: #FFFFFF;
+}
+
+div.HomepageFeatures{
+	display: flex;
+	flex-direction: row;
+
+}
+
+div.HomepageFeature{
+	padding: 40px 20px;
+	text-align: center;
+	width: 50% ;
+}
+div.HomepageFeature:hover{
+	border-top: 3px solid #000000;
+	border-bottom: 3px solid #000000;
+}
+div.HomepageFeature span.featureicon{
+	height: 20px;
+	width: 25px;
+	font-size: 25px;
+	background: #FFFFFF;
+	color: #0000FF;
+}
+
+div.HomepageUpdate{
+	background: #e3e3e3;
+	padding: 5px 0px;
+}
+div.HomepageContainer{
+	display: flex;
+	flex-direction: row;
+  text-align: left;
+}
+div.note{
+	text-align: left;
+}
+div.note h3{
+	padding: 15px 10px;
+	font-size: 20px;
+	font-weight: normal;
+	margin-left: 5px;
+}
+div.note p{
+	padding: 5px 15px;
+	font-size: 20px;
+}
+
+div.Emailform h3{
+	text-align: left;
+	padding-bottom: 0px;
+	padding-top: 30px;
+}
+
+div.formcontainer input{
+	width: 100%;
+	padding: 5px 10px;
+}
+
+div.formcontainer{
+	width: 40%;
+	position: relative;
+}
+
+div.formcontainer button{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	font-size: 20px;
+	padding: 0px 15px;
+	color: #000000;
+	background: #e3e3e3;
+}
+
+div.formcontainer button:hover{
+	border-top: 2px solid;
+}
+
+
+div.Homepagefinale{
+	text-align: center;
+	padding: 10px 0 10px 0px;
+}
+
+p.Socials{
+	font-size: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+div.SocialsIconContainer a{
+	font-size: 25px;
+	color: #000000;
+	display: inline-block;
+	background: e3e3e3;
+	height: 50px;
+	width: 50px;
+}
+div.SocialsIconContainer a:hover{
+	border-top: 3px solid #000000;
+}
+
+div.Homepagefooter{
+	background: #e3e3e3;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: -30px;
+}
+
+div.Homepagefooter a{
+	margin-left: 35px;
+	color: #00000FF;
+}
+
+div.Homepagefooter a:hover{
+	border:2px solid #e3e3e3;
+}
+div.Copyright h3{
+	margin-top: 10px;
+	font-size: 19px;
+}
+
+
+/*DASHBOARD STYLE*/
+
+#dashboardMainContainer{
+	display: flex;
+	flex-direction: row;
+}
+
+div.content_container{
+	width: 80%;
+    color: #f4f6f9;
+}
+div.sidebar{
+	width: 30%;
+	height: 100vh;
+	background: #323232;
+}
+
+div.sidebar h1{
+	font-size: 100px;
+	text-align: center;
+}
+div.sidebar_user{
+	text-align: center;
+	position: relative;
+	padding-bottom: 25px;
+	border-bottom: 2px solid #fff;
+}
+
+div.sidebar_user img{
+	width: 90px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 3px solid #323232;
+	margin-right: 7px;
+	vertical-align: middle;
+}
+
+div.sidebar_user span{
+	top: 25%;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: -30px;
+	display: inline-block;
+}
+
+ul.sidebar_menu_list{
+	margin-top: 25px;
+}
+ul.sidebar_menu_list li{
+	padding: 25px 20px;
+	text-transform: uppercase;
+}
+
+ul.sidebar_menu_list li a{
+	color: #fff;
+	height: auto;
+	display: block;
+	font-size: 20px;
+}
+
+ul.sidebar_menu_list li a i{
+	font-size: 30px;
+}
+ul.sidebar_menu_list li.menuactive{
+	background: #000000;
+	color: #fff;
+}
+
+ul.sidebar_menu_list li:hover{
+	background: #000000;
+	color:#fff;
+    transition: 0.2s all;
+}
+
+div.content_topNav{
+	background:#000000;
+	padding: 30px;
+}
+
+div.content_topNav a{
+    color: #848383;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+div.content_topNav a#logoutBtn{
+	float:right;
+}
+
+div.content_topNav a#logoutBtn:hover{
+	border: 3px solid #fff;
+}
+
+div.content{
+	padding: 60px 15px 15px 15px;
+}
+div.content_main{
+	background: #fff;
+	height: 100%;
+	min-height: 1000px;
+
+}
+
+
+/*POLICY PAGE*/
+div.heading h1{
+	text-align: center;
+	font-size: 50px;
+	padding: 10px 15px;
+}
+div.heading p{
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+div.Paragraph{
+	margin-left: 10px;
+}
+
+div.Paragraph h2{
+	margin-left: 15px;
+	padding: 10px 15px;
+	font-size: 25px;
+}
+div.Paragraph p{
+	margin-left: 95px;
+	padding: 10px 0px;
+	font-family: Arial,sans-serif;
+}
+div.Paragraph ul{
+	margin-left: 105px;
+	font-family: Arial,sans-serif;
+}
+
+
+/*REGISTER PAGE*/
+body#Registerpage{
+	  background-image: url('../images/login background.jpg'); 
+	  background-attachment: fixed;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+    background-size: cover;
+}
+
+div.Registerheader{
+	width: 100%;
+	padding: 5px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 80px;
+	background: rgba(0, 0, 0, .5)
+}
+
+div.Registerheader p{
+	margin-right: 20px;
+	font-weight: bold;
+	font-size: 30px;
+	color: #fff;
+}
+
+div.Registerheader a{
+	text-align: right;
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+}
+
+div.Registerbody form{
+	margin: 0 auto;
+	width: 450px;
+	background: rgba(0, 0, 0, .5);
+	padding: 40px;
+	border: 3px solid #fff;
+	border-radius: 5px;
+}
+
+div.RegisterInputContainer{
+	margin-top: 20px;
+}
+
+div.RegisterInputContainer label{
+	display: block;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+div.RegisterPosition label{
+	display: block;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+
+div.RegisterInputContainer input{
+	height: 25px;
+	width: 100%;
+}
+
+div.RegisterInputContainer input:hover{
+	border: 2px solid#000000;
+}
+
+div.Registerbutton{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.Registerbutton :hover{
+	border: 2px solid#000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
