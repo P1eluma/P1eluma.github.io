@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <script src="https://kit.fontawesome.com/dc3b300218.js"></script>
+  <style>.error{color: red;}</style>
+</head>
+<body id="Registerpage">
+  <div id="Registerpage">
+    <div class="Registerheader">
+      <p>User Registration</p>
+      <a href="index.html">Homepage</a>
+    </div>
+    <div class="Registerbody">
+      <form action="process-register.php" method="post" onsubmit="return validateForm()" novalidate>
+        <div class="RegisterInputContainer">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+        </div>
+        <div class="RegisterInputContainer">
+          <label for="Email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="RegisterInputContainer">
+          <label for="">Password:</label>
+          <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[A-Z]).{6,}" required
+          title="Minimum 6 characters with at least one uppercase letter and one number.">
+        </div>
+        <div class="RegisterInputContainer">
+          <label for="">Repeat Password:</label>
+          <input type="password" id="repeatPassword" name="repeatpassword" pattern="(?=.*\d)(?=.*[A-Z]).{6,}" required
+          title="Minimum 6 characters with at least one uppercase letter and one number.">
+        </div>
+        <div class="RegisterPosition">
+          <label for="position">Position:</label>
+          <select id="position" name="position" required>
+            <option value="">Select Position</option>
+            <option value="store associate">Store Associate</option>
+            <option value="manager">Manager</option>
+          </select>
+        </div>
+        <div class="Registerbutton">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+<script>
+function validateForm() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const repeatPassword = document.getElementById('repeatPassword').value;
+  const position = document.getElementById('position').value;
+
+  const passwordPattern = /^(?=.*\d)(?=.*[A-Z]).{6,}$/;
+
+  if (!passwordPattern.test(password)) {
+    alert('Password should be minimum 6 characters with at least one uppercase letter and one number.');
+    return false;
+  }
+
+  if (password !== repeatPassword) {
+    alert('Passwords do not match.');
+    return false;
+  }
+
+  if (position !== 'store associate' && position !== 'manager') {
+    alert('Please select a valid position.');
+    return false;
+  }
+
+  // Show registration success notification
+  alert('User registration successful!');
+  return true;
+}
+</script>
+
+</body>
+</html>
